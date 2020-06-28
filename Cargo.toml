@@ -1,0 +1,34 @@
+[package]
+name = "bitmaptest"
+version = "0.1.0"
+authors = ["lvqinghao <lvqinghao@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitmaps = "2.1.0"
+typenum = "1.12.0"
+parity-crypto = { version = "0.6.2", features = ["publickey"] }
+hex-literal = "0.2.1"
+bit_field = "0.10.0"
+rlp = "0.4"
+
+ed25519-dalek = { version = "1.0.0-pre.3", default-features = false, features = ["u64_backend", "alloc"] }
+blake2-rfc = { version = "0.2.18", default-features = false }
+tiny-keccak = { version = "2.0.1", features = ["keccak"] }
+schnorrkel = { version = "0.9.1", features = ["preaudit_deprecated", "u64_backend"], default-features = false }
+sha2 = { version = "0.8.0", default-features = false }
+hex = { version = "0.4", default-features = false }
+twox-hash = { version = "1.5.0", default-features = false }
+libsecp256k1 = { version = "0.3.2", default-features = false, features = ["hmac"] }
+merlin = { version = "2.0", default-features = false }
+primitive-types = { version = "0.7.0", default-features = false, features = ["codec"] }
+
+[dev-dependencies]
+pretty_assertions = "0.6.1"
+hex-literal = "0.2.1"
+rand = "0.7.2"
+criterion = "0.2.11"
+serde_json = "1.0"
+
